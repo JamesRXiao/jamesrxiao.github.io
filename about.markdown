@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 Hello! I'm James Xiao, a MIT '29. 
-This page will finish construction 11/06/2026
+This page will finish construction 11/11/2026
 
 <!-- This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
