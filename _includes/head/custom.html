@@ -1,0 +1,22 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Geist:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<script>
+  // Helvetica Neue ships on macOS/iOS but not Windows/most Linux.
+  // If it's absent, tag <html class="no-hn"> so CSS can adjust for Geist.
+  (function () {
+    try {
+      var s = "mmmmmmmmmwwwwwww0123456789";
+      var c = document.createElement("canvas").getContext("2d");
+      c.font = "72px monospace";
+      var base = c.measureText(s).width;
+      c.font = '72px "Helvetica Neue", monospace';
+      if (c.measureText(s).width === base)
+        document.documentElement.classList.add("no-hn");
+    } catch (e) {}
+  })();
+</script>

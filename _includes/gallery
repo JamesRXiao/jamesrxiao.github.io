@@ -1,0 +1,52 @@
+{% comment %}
+  Custom gallery (overrides the theme's version):
+  - shows each image's title as a caption under it
+  - auto-compresses plain Cloudinary URLs
+  - image_path is optional: url is used for both if it's missing
+{% endcomment %}
+
+{% if include.id %}
+  {% assign gallery = page[include.id] %}
+{% else %}
+  {% assign gallery = page.gallery %}
+{% endif %}
+
+{% if include.layout %}
+  {% assign gallery_layout = include.layout %}
+{% elsif gallery.size == 2 %}
+  {% assign gallery_layout = 'half' %}
+{% elsif gallery.size >= 3 %}
+  {% assign gallery_layout = 'third' %}
+{% else %}
+  {% assign gallery_layout = '' %}
+{% endif %}
+
+{% assign thumb_w = include.thumb_width | default: 800 %}
+{% assign full_w = include.full_width | default: 2000 %}
+{% capture thumb_settings %}/upload/f_auto,q_auto,c_limit,w_{{ thumb_w }}/{% endcapture %}
+{% capture full_settings %}/upload/f_auto,q_auto,c_limit,w_{{ full_w }}/{% endcapture %}
+
+<figure class="{{ gallery_layout }} {{ include.class }}" style="--gallery-h: {{ include.height | default: '300px' }};"> {% for img in gallery %}
+    {% assign full = img.url | default: img.image_path %}
+    {% assign thumb = img.image_path | default: img.url %}
+    {% assign label = img.caption | default: img.title %}
+
+    {% if full contains "res.cloudinary.com" and full contains "/upload/v" %}
+      {% assign full = full | replace: "/upload/", full_settings %}
+    {% endif %}
+    {% if thumb contains "res.cloudinary.com" and thumb contains "/upload/v" %}
+      {% assign thumb = thumb | replace: "/upload/", thumb_settings %}
+    {% endif %}
+
+    <a href="{{ full | relative_url }}" {% if img.title %}title="{{ img.title }}"{% endif %} class="gallery__item">
+      <img src="{{ thumb | relative_url }}" alt="{{ img.alt }}">
+      {% if label %}
+        <span class="gallery__caption">{{ label | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+      {% endif %}
+    </a>
+  {% endfor %}
+
+  {% if include.caption %}
+    <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
+  {% endif %}
+</figure>

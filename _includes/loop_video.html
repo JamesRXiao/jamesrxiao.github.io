@@ -1,0 +1,8 @@
+{% assign w = include.width | default: 800 %}
+{% capture url %}https://res.cloudinary.com/uzoen9fy/video/upload/q_auto,w_{{ w }}{% endcapture %}
+<video autoplay loop muted playsinline preload="metadata"
+       poster="{{ url }}/{{ include.id }}.jpg"
+       style="{% if include.size %}flex: 0 1 {{ include.size }};{% endif %}{% if include.ratio %} aspect-ratio: {{ include.ratio }};{% endif %}">
+  <source src="{{ url }},ac_none/{{ include.id }}.webm" type="video/webm">
+  <source src="{{ url }},ac_none/{{ include.id }}.mp4" type="video/mp4">
+</video>
