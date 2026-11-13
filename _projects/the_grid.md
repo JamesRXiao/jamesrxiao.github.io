@@ -19,6 +19,21 @@ gallery_pcb:
     alt: "layout"
     title: "PCB Layout"
 
+gallery_electronics:
+  - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556372/Photo_Jun_08_2026_20_09_25.jpg
+    url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556372/Photo_Jun_08_2026_20_09_25.jpg
+    alt: "pcb rev1"
+    title: "PCB Rev 1"
+  - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556368/Photo_Aug_31_2026_15_39_02_10.jpg
+    url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556368/Photo_Aug_31_2026_15_39_02_10.jpg
+    alt: "wired pcb in pixel"
+    title: "Wired PCB Rev 2 in module with microswitch"
+  - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556353/Photo_Aug_29_2026_12_25_41.jpg
+    url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556353/Photo_Aug_29_2026_12_25_41.jpg
+    alt: "wired pcb octopus"
+    title: "PCB with LED octopus"
+
+
 gallery_prototyping:
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/Photo_Jun_14_2026_15_05_25.jpg
     url: https://res.cloudinary.com/uzoen9fy/image/upload/Photo_Jun_14_2026_15_05_25.jpg
@@ -27,15 +42,15 @@ gallery_prototyping:
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556379/Photo_Jun_14_2026_17_37_18.jpg
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556379/Photo_Jun_14_2026_17_37_18.jpg
     alt: "LED Testing"
-    title: "LED Testing"
+    title: "LED testing"
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556379/Photo_Jun_14_2026_17_37_18.jpg
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556379/Photo_Jun_14_2026_17_37_18.jpg
     alt: "LED Testing"
-    title: "LED Testing"
+    title: "LED testing"
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/Photo_Jun_14_2026_16_42_34.jpg
     url: https://res.cloudinary.com/uzoen9fy/image/upload/Photo_Jun_14_2026_16_42_34.jpg
     alt: "RS-485 Communication Testing"
-    title: "RS-485 Communication Testing"
+    title: "RS-485 communication testing"
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/Photo_Jun_13_2026_15_55_38.jpg
     url: https://res.cloudinary.com/uzoen9fy/image/upload/Photo_Jun_13_2026_15_55_38.jpg
     alt: "us working"
@@ -43,11 +58,11 @@ gallery_prototyping:
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/Photo_Jun_14_2026_15_30_39.jpg
     url: https://res.cloudinary.com/uzoen9fy/image/upload/Photo_Jun_14_2026_15_30_39.jpg
     alt: "module"
-    title: "Module"
+    title: "Module frame"
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556380/Photo_Jun_14_2026_18_33_51.jpg
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556380/Photo_Jun_14_2026_18_33_51.jpg
     alt: "module testing"
-    title: "Module Testing"
+    title: "Module testing"
 
 gallery_mass_assembly:
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556367/Photo_Aug_31_2026_15_39_02_9.jpg
@@ -57,11 +72,11 @@ gallery_mass_assembly:
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556369/Photo_Aug_31_2026_15_39_02.jpg
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556369/Photo_Aug_31_2026_15_39_02.jpg
     alt: "more labor"
-    title: "More Labor"
+    title: "More labor"
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556381/Photo_Jun_26_2026_19_08_07.jpg
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556381/Photo_Jun_26_2026_19_08_07.jpg
     alt: "microswitches"
-    title: "All of our Microswitches"
+    title: "All of our microswitches"
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556381/Photo_Sep_02_2026_05_28_07.jpg
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556381/Photo_Sep_02_2026_05_28_07.jpg
     alt: "chuds"
@@ -73,15 +88,11 @@ gallery_mass_assembly:
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556354/Photo_Aug_29_2026_12_26_39.jpg
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556354/Photo_Aug_29_2026_12_26_39.jpg
     alt: "makerspace"
-    title: "Work in the EC Makerspace"
-  - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556352/Photo_Aug_29_2026_12_21_23.jpg
-    url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556352/Photo_Aug_29_2026_12_21_23.jpg
-    alt: "makerspace"
-    title: "More work in the EC Makerspace"
+    title: "Work in the EC makerspace"
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556357/Photo_Aug_29_2026_15_31_57.jpg
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556357/Photo_Aug_29_2026_15_31_57.jpg
     alt: "assembly"
-    title: "More Mass Assembly"
+    title: "More mass assembly"
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556361/Photo_Aug_30_2026_14_12_49.jpg
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556361/Photo_Aug_30_2026_14_12_49.jpg
     alt: "assembly"
@@ -110,6 +121,14 @@ gallery_mass_assembly:
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556370/Photo_Aug_31_2026_15_39_28_2.jpg
     alt: "troubleshooting"
     title: "Finishing touches"
+  - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794553034/Photo_Aug_31_2026_15_39_02_16.jpg
+    url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794553034/Photo_Aug_31_2026_15_39_02_16.jpg
+    alt: "testing"
+    title: "Testing before screwing on final pixels"
+  - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794553035/Photo_Aug_31_2026_15_39_02_17.jpg
+    url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794553035/Photo_Aug_31_2026_15_39_02_17.jpg
+    alt: "scramble"
+    title: "The scramble to finish on time"
 ---
 
 Every year, MIT hosts Residence EXploration (REX), a multi-day, campus-wide event where incoming freshmen partake in dorm activities to decide which dorm they want to live in. My dorm EAsT camPUS spends thousands of man-hours building [massive wooden structures](https://youtu.be/RXyzGZMpu_I?si=BEltpzfNYp0hge4V){:target="_blank" rel="noopener noreferrer"}. For REX 2026, I, along with my friends Vivian Ang and [Xinlan Tanner](https://xinlan.myportfolio.com/){:target="_blank" rel="noopener noreferrer"}, led the design and construction of *The Grid*, a massive interactive LED dance floor.
@@ -157,14 +176,14 @@ We wanted a modular structure for our dance floor, as this would be the easiest 
 
 Because of our floor resolution, we chose 1x4 pixel modules, which also reduced the bus length. 
 
-Each module is mounted inside a wooden frame and a 1/8 inch polycarbonate square is drilled into each pixel. We found that polycarbonate supported dancers' weights while also flexing enough to trigger the microswitches underneath.
+Each module is mounted inside a wooden frame and an 1/8 inch polycarbonate square is drilled into each pixel. We found that polycarbonate supported dancers' weights while also flexing enough to trigger the microswitches underneath.
 
 <figure style="max-width: 500px; margin: 2em auto;">
   <img src="https://res.cloudinary.com/uzoen9fy/image/upload/Photo_Aug_29_2026_15_10_15.jpg" alt="construction">
 </figure>
 
 ## Electronics Overview
-The Grid is composed of 49 modules, each housing a custom-designed PCB. Each PCB/module is responsible for 4 individual pixels, meaning that it controls 4 LED strips and reads data from 4 microswitches. A single RS-485 communication bus runs throughout the entire floor, allowing color frame data to be broadcast to all modules and modules to respond back with microswitch data.
+The Grid is composed of 49 modules, each housing a custom-designed PCB. Each PCB/module is responsible for 4 individual pixels, meaning that it controls 4 LED strips and reads data from 4 microswitches. 
 
 The PCB I designed consists of a microcontroller, an RS-485 transceiver, MOSFETs for LED control, 24V step-down components, and switch input components.
 
@@ -185,13 +204,11 @@ The final iteration of the PCB designed in KiCAD includes:
     
 The STM32 Blue Pill outputted 12 PWM signals that connected to MOSFETs to drive 4 LEDs. It also took in 4 microswitch input readings. For each PCB in a module, power (24V and GND) and comms (RSA and RSB) come in one end and out the other. 
 
-We expected an absolute maximum of 9A through each PCB, so I designed each to handle around 16A of maximum current.
+We expected an absolute maximum of 9A through each PCB. Our PCB handles around 16A of maximum current.
 
-{% include gallery id="gallery_pcb" class="full gallery-equal" caption="Final PCB Design in KiCAD." %}
+{% include gallery id="gallery_pcb" class="full gallery-equal"%}
+{% include gallery id="gallery_electronics" class="full gallery-equal"%}
 
-<figure style="max-width: 500px; margin: 2em auto;">
-  <img src="https://res.cloudinary.com/uzoen9fy/image/upload/v1794556372/Photo_Jun_08_2026_20_09_25.jpg" alt="pcb">
-</figure>
 
 ### LEDs
 Going into the project, we had a few requirements for our LEDs:
@@ -224,7 +241,7 @@ During our initial brainstorming, we wanted to have force-sensitive resistors (F
   <figcaption>oh god one dollar for an fsr this is the worst thing ever 100 tomatoes to fsrs</figcaption>
 </figure>
 
-Thus, we followed in the footsteps of AvWuff and team and used microswitches. After all, we only really need a binary input for each pixel.
+Thus, we followed in the footsteps of AvWuff and team and used microswitches. This would mean our sensitivity would be controlled by our pixel geometry, and unable to be dynamically controlled.
 
 <figure style="max-width: 300px; margin: 2em auto;">
   <img src="https://res.cloudinary.com/uzoen9fy/image/upload/Screenshot_2026-11-13_022145.png" alt="micro switches">
@@ -234,10 +251,10 @@ Thus, we followed in the footsteps of AvWuff and team and used microswitches. Af
 ### Communication
 As all modules are in close proximity with each other, we wanted to use a wired connection (cost and complexity of wireless eek!!). I chose to use differential signaling for communication due to its robustness. 
 
-At first, I considered CAN, but was advised to choose RS-485 for its simplicity. In addition, RS-485 can have up to 256 devices on a single bus with fractional unit loading.
+At first, we considered CAN, but was advised to choose RS-485 for its simplicity. In addition, RS-485 can have up to 256 devices on a single bus with fractional unit loading.
 
 I used a one-controller many-device architecture for the RS-485 bus. Each module on the floor has a unique MODULE_ID.
-- A single controller board connects to a computer over USB-CDC, which sends frame data (all LED’s colors) to the controller module
+- A single controller board connects to a computer over USB-CDC, which sends a single frame (all LED’s colors) to the controller module
 - The controller board forwards this data and broadcasts it to every single module on the bus
 - Each module displays its corresponding colors in the data based on its MODULE_ID
 - If a module has had one of its microswitches pressed within frame N, it replies back with its microswitch data at a designated time slot after receiving frame N, also based on its MODULE_ID
@@ -250,7 +267,7 @@ For the differential pair, we purchased expensive CAN wire (same impedance) that
 ### Iteration
 
 #### PCB Rev 0
-The very first concepts I had for the PCB ranged from a handful of breakout boards connected by traces, to using ESP32s and CAN, JST and XT30 connectors, to an MCU directly on the PCB. However, after consulting [with](https://www.youtube.com/@floresacton){:target="_blank" rel="noopener noreferrer"} [some](https://www.anhadsawhney.com/){:target="_blank" rel="noopener noreferrer"} [upperclassmen](https://intentionally-aimless.com/){:target="_blank" rel="noopener noreferrer"}, I slowly modified the board to use screw terminals, RS-485, and an STM32. Anhad suggested that it would reduce cost, components, and risk of errors if we made our board a shield for the STM32 Bluepill, rather than integrating all the MCU and power regulation components directly onto the PCB. This ended up being hugely beneficial in our testing.
+The very first concepts I had for the PCB ranged from a handful of breakout boards connected by traces, to using ESP32s and CAN, JST and XT30 connectors, to an MCU directly on the PCB. However, after consulting [with](https://www.youtube.com/@floresacton){:target="_blank" rel="noopener noreferrer"} [some](https://www.anhadsawhney.com/){:target="_blank" rel="noopener noreferrer"} [upperclassmen](https://intentionally-aimless.com/){:target="_blank" rel="noopener noreferrer"}, I slowly modified the board to use screw terminals, RS-485, and an STM32. Anhad suggested that it would reduce cost, components, and risk of errors if we made our board a shield for the STM32 Bluepill, rather than integrating all the MCU and power regulation components directly onto the PCB. This ended up being hugely beneficial in testing and assembly.
 
 #### PCB Rev 1
 PCB Rev 1 took around 2 weeks to design. After I was finished with this iteration, we sent out 10 boards to JLCPCB as a prototyping run. This gave us opportunity to test and identify any errors before we do the full production run of 50 boards.
@@ -319,8 +336,9 @@ Special shoutout to Kendall for helping us mount the power supplies and Liong fo
   {% include loop_video.html id="Video_Aug_29_2026_13_33_04" width=600 size="800px" %}
 </div>
 
-{% include gallery id="gallery_mass_assembly" class="breakout gallery-equal" height="200px"%}
+{% include gallery id="gallery_mass_assembly" class="breakout gallery-equal" height="200px" shift="5vw"%}
 <div class="media-row breakout">
+  {% include loop_video.html id="Video_Aug_30_2026_21_13_44" width=600 size="190px" %}
   {% include loop_video.html id="Video_Aug_28_2026_23_41_40" width=600 size="600px" %}
 </div>
 
@@ -336,10 +354,22 @@ Special shoutout to Kendall for helping us mount the power supplies and Liong fo
 ## Software
 I put together a [quick SDK](https://github.com/JamesRXiao/The-Grid-Software){:target="_blank" rel="noopener noreferrer"} for developers to create games and animations on the LED floor. It allowed them to test their programs locally and also run them on the floor by connecting to the controller board over USB-CDC. This was largely vibe-coded so I am not going to talk too much about it, but its main purpose was to provide a bridge between our controller protocol and developers.
 
-## Deploy Photos
+## Deploy
 
 <div class="media-row breakout">
-  {% include loop_video.html id="Video_Aug_30_2026_11_16_13" width=600 size="600px" %}
+  {% include loop_video.html id="Video_Aug_31_2026_00_57_41" width=600 size="400px" %}
+  <img src="https://res.cloudinary.com/uzoen9fy/image/upload/v1794553037/Photo_Aug_31_2026_15_43_43.jpg" style="flex: 0 1 300px;">
+  {% include loop_video.html id="Video_Aug_30_2026_21_56_31" width=600 size="400px" %}
+</div>
+<div class="media-row breakout">
+  {% include loop_video.html id="Video_Aug_30_2026_23_00_56" width=600 size="400px" %}
+  {% include loop_video.html id="Video_Aug_31_2026_00_43_42" width=600 size="400px" %}
+  {% include loop_video.html id="Video_Aug_30_2026_22_59_49" width=600 size="400px" %}
+</div>
+<div class="media-row breakout">
+  {% include loop_video.html id="Video_Aug_30_2026_21_58_01" width=600 size="400px" %}
+  {% include loop_video.html id="Video_Aug_30_2026_22_08_25" width=600 size="400px" %}
+  <img src="https://res.cloudinary.com/uzoen9fy/image/upload/v1794553033/Photo_Aug_30_2026_23_15_31.jpg" style="flex: 0 1 300px;">
 </div>
 
 ## Misc
@@ -347,17 +377,25 @@ While I was primarily responsible for electronics, software, and coordination, I
 
 Shelf (Hold PCB, attach to side wall of each module):
 
+<figure style="max-width: 400px; margin: 2em auto;">
+  <img src="https://res.cloudinary.com/uzoen9fy/image/upload/v1794593812/Screenshot_2026-11-13_131609.png" alt="my wiring diagram">
+</figure>
+
 Microswitch mount (drilled into wooden floor):
+
+<figure style="max-width: 350px; margin: 2em auto;">
+  <img src="https://res.cloudinary.com/uzoen9fy/image/upload/v1794593810/Screenshot_2026-11-13_131552.png" alt="my wiring diagram">
+</figure>
 
 ## Special Thanks
 
 Special thanks to:
-- CAMIT and MIT Edgerton Design2Making for sponsoring us with maker grants
-- JLCPCB/EasyEDA for student PCB sponsorship and support
-- Industrial Plastics Woburn for providing affordable polycarbonate sheets
-- Anhad Sawhney, Nevin Thinagar, and Miguel Flores-Acton for PCB design review
-- Kendall Binkley, Jonny Dorminy, Liong Ma, Madison Sutkaitis, Sora Egozy, An Phan, Patrick Cao, Audrey Johnson, Shuoyan “Andrew” Chen, James [last name unknown], and various MIT ‘30s for volunteering with fabrication and mass assembly
+- [CAMIT](https://arts.mit.edu/camit/){:target="_blank" rel="noopener noreferrer"} and MIT Edgerton Design2Making for sponsoring us with maker grants
+- [JLCPCB](https://jlcpcb.com/){:target="_blank" rel="noopener noreferrer"}/[EasyEDA](https://easyeda.com/){:target="_blank" rel="noopener noreferrer"} for student PCB sponsorship and support
+- [Industrial Plastics Woburn](https://www.industrialplasticsinc.com/){:target="_blank" rel="noopener noreferrer"} for providing affordable polycarbonate sheets
+- [Anhad Sawhney](https://www.anhadsawhney.com/){:target="_blank" rel="noopener noreferrer"}, [Nevin Thinagar](https://intentionally-aimless.com/){:target="_blank" rel="noopener noreferrer"}, and [Miguel Flores-Acton](https://www.youtube.com/@floresacton){:target="_blank" rel="noopener noreferrer"} for PCB design review
+- Kendall Binkley, Jonny Dorminy, [Liong Ma](https://liongma.com/){:target="_blank" rel="noopener noreferrer"}, Madison Sutkaitis, Sora Egozy, An Phan, Patrick Cao, Audrey Johnson, Andy Chen, James [last name unknown], and various MIT ‘30s for volunteering with fabrication and mass assembly
 - Annabella Du, Ben Scaife, and Eric Hsu for software development of dance floor games and animations
 - Dodecahedron build leads Erez Fass, Amelia Bronhard-Yates, and Nina Cranor for being generally helpful and helping us source things :)
-- Big Build leads Graciela Leon, Lucy Gray, Paola Romero, and Nevin Thinagar for being generally helpful and helping us source things :)
+- Big Build leads Graciela Leon, Lucy Gray, [Paola Romero](https://paolaromero.me/){:target="_blank" rel="noopener noreferrer"}, and [Nevin Thinagar](https://intentionally-aimless.com){:target="_blank" rel="noopener noreferrer"} for being generally helpful and helping us source things :)
 - AND OF COURSE, MY PROJECT CO-LEADS VIVIAN AND XINLAN!!!!

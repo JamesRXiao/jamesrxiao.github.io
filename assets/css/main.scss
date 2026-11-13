@@ -214,15 +214,21 @@ h3 { font-size: 1.3em; }
 }
 
 /* ===== Anything that extends beyond the text column ===== */
+/* ===== Anything that extends beyond the text column ===== */
 .breakout {
-  width: min(95vw, 1400px);   /* as wide as the screen allows, capped at 1400px */
+  --shift: 3vw;      /* default nudge for every breakout: positive = right, negative = left */
+
+  width: min(95vw, 1400px);
   max-width: none;
   position: relative;
   left: 50%;
-  transform: translateX(-50%); /* keeps it centered on the page */
-  margin-right: 0;             /* cancels the theme's `full` offset if both are present */
-}
+  transform: translateX(calc(-50% + var(--shift)));
 
+  /* phones: the layout is already centered there, so no nudge */
+  @media (max-width: 1024px) {
+    --shift: 0vw;
+  }
+}
 /* on wider screens, keep rows on one line instead of wrapping */
 .media-row {
   @include breakpoint($medium) {
@@ -304,3 +310,6 @@ figure.gallery-equal {
   text-decoration: none;  /* no underline on caption text */
 }
 
+.project .page__date {
+  display: none;
+}

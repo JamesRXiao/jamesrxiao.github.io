@@ -26,8 +26,8 @@
 {% capture thumb_settings %}/upload/f_auto,q_auto,c_limit,w_{{ thumb_w }}/{% endcapture %}
 {% capture full_settings %}/upload/f_auto,q_auto,c_limit,w_{{ full_w }}/{% endcapture %}
 
-<figure class="{{ gallery_layout }} {{ include.class }}" style="--gallery-h: {{ include.height | default: '300px' }};"> {% for img in gallery %}
-    {% assign full = img.url | default: img.image_path %}
+<figure class="{{ gallery_layout }} {{ include.class }}" style="--gallery-h: {{ include.height | default: '300px' }};{% if include.shift %} --shift: {{ include.shift }};{% endif %}">    {% assign full = img.url | default: img.image_path %}
+  {% for img in gallery %}
     {% assign thumb = img.image_path | default: img.url %}
     {% assign label = img.caption | default: img.title %}
 
