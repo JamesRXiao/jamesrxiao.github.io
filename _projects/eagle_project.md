@@ -7,6 +7,7 @@ header:
   teaser: /assets/images/projects/tetris/cover_2.jpeg
 teaser_position: "50% 45%"
 toc: true            # optional: table of contents on the right
+---
 
 In March of 2024, I led me Eagle Scout community project: An 125+ft community project built for easier access and traversal of a frequently-muddy local trail. 
 
