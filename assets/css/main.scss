@@ -102,7 +102,7 @@ html {
     
 /* ===== Headings ===== */
 .page__title {               /* the big title at the top of each page */
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 700;
 }
 
@@ -358,4 +358,50 @@ figure.gallery-equal video {
 .gallery__item img {
   display: block;       /* removes the small gap left for text descenders */
   margin-bottom: 0;     /* cancels the theme's margin under figure images */
+}
+
+/* ===== Blog list ===== */
+.post-list {
+  --thumb-w: 120px;        /* default thumbnail size for every post */
+  --thumb-h: 80px;
+
+  max-width: 800px;
+  margin: 2em auto;
+}
+
+.post-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;   /* text left, thumbnail far right */
+  gap: 1.5em;
+  padding: 1.2em 0;
+  border-bottom: 1px solid #e5e5e5;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover .post-list__title {
+    color: #7188fa;                  /* title color on hover */
+  }
+}
+
+.post-list__title {
+  display: block;
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.post-list__date {
+  display: block;
+  margin-top: 0.3em;
+  font-size: 0.8em;
+  color: #777;
+}
+
+.post-list__thumb {
+  flex: 0 0 auto;
+  width: var(--thumb-w);
+  height: var(--thumb-h);
+  object-fit: cover;
+  border-radius: 6px;
 }

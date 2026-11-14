@@ -2,6 +2,10 @@
   <div class="back-to-projects">
     <a href="{{ '/projects/' | relative_url }}" class="btn btn--primary">← Back to projects</a>
   </div>
+{% elsif page.collection == "posts" %}
+  <div class="back-to-projects">
+    <a href="{{ '/blog/' | relative_url }}" class="btn btn--primary">← Back to blog</a>
+  </div>
 {% elsif page.previous or page.next %}
   <nav class="pagination">
     {% if page.previous %}

@@ -1,0 +1,15 @@
+<div class="post-list">
+  {% for post in site.posts %}
+    <a class="post-list__item" href="{{ post.url | relative_url }}">
+      <div class="post-list__text">
+        <span class="post-list__title">{{ post.title }}</span>
+        <span class="post-list__date">{{ post.date | date: "%B %-d, %Y" }}</span>
+      </div>
+      {% if post.thumbnail %}
+        <img class="post-list__thumb"
+             src="{{ post.thumbnail | relative_url }}" alt=""
+             style="{% if post.thumbnail_width %}--thumb-w: {{ post.thumbnail_width }};{% endif %}{% if post.thumbnail_height %} --thumb-h: {{ post.thumbnail_height }};{% endif %}">
+      {% endif %}
+    </a>
+  {% endfor %}
+</div>
