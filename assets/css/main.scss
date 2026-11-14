@@ -216,15 +216,15 @@ h3 { font-size: 1.3em; }
 /* ===== Anything that extends beyond the text column ===== */
 /* ===== Anything that extends beyond the text column ===== */
 .breakout {
-  --shift: 3vw;      /* default nudge for every breakout: positive = right, negative = left */
+  --shift: 3vw;
+  --breakout-w: min(95vw, 1400px);   /* default total width */
 
-  width: min(95vw, 1400px);
+  width: var(--breakout-w);
   max-width: none;
   position: relative;
   left: 50%;
   transform: translateX(calc(-50% + var(--shift)));
 
-  /* phones: the layout is already centered there, so no nudge */
   @media (max-width: 1024px) {
     --shift: 0vw;
   }
@@ -306,10 +306,56 @@ figure.gallery-equal {
   line-height: 1.4;
 }
 
+/* ===== Figcaptions: match the gallery captions ===== */
+figcaption {
+  font-family: $global-font-family;  /* theme default is serif */
+  font-size: 0.8em;
+  color: #121212;
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-top: 0.4em;
+}
+
 .gallery__item {
   text-decoration: none;  /* no underline on caption text */
 }
 
 .project .page__date {
   display: none;
+}
+
+.back-to-projects {
+  margin: 3em 0 1em;
+  text-align: center;       /* or left */
+}
+
+.project-year {
+  font-size: 1em;
+  color: #595959;
+}
+
+/* ===== Videos inside galleries ===== */
+.gallery__item video {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.gallery__item--video {
+  cursor: default;
+}
+
+/* equal-height galleries: size videos the same way as images */
+figure.gallery-equal video {
+  height: var(--gallery-h);
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* gallery images: no extra space before the caption */
+.gallery__item img {
+  display: block;       /* removes the small gap left for text descenders */
+  margin-bottom: 0;     /* cancels the theme's margin under figure images */
 }

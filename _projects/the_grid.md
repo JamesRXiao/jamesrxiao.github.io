@@ -43,10 +43,6 @@ gallery_prototyping:
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556379/Photo_Jun_14_2026_17_37_18.jpg
     alt: "LED Testing"
     title: "LED testing"
-  - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556379/Photo_Jun_14_2026_17_37_18.jpg
-    url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794556379/Photo_Jun_14_2026_17_37_18.jpg
-    alt: "LED Testing"
-    title: "LED testing"
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/Photo_Jun_14_2026_16_42_34.jpg
     url: https://res.cloudinary.com/uzoen9fy/image/upload/Photo_Jun_14_2026_16_42_34.jpg
     alt: "RS-485 Communication Testing"
@@ -336,13 +332,15 @@ Special shoutout to Kendall for helping us mount the power supplies and Liong fo
   {% include loop_video.html id="Video_Aug_29_2026_13_33_04" width=600 size="800px" %}
 </div>
 
-{% include gallery id="gallery_mass_assembly" class="breakout gallery-equal" height="200px" shift="5vw"%}
-<div class="media-row breakout">
+{% include gallery id="gallery_mass_assembly" class="breakout gallery-equal" height="225px" shift="8vw" total_width="1300px"%}
+
+
+<div class="media-row breakout" style="--shift: 8vw;">
   {% include loop_video.html id="Video_Aug_30_2026_21_13_44" width=600 size="190px" %}
   {% include loop_video.html id="Video_Aug_28_2026_23_41_40" width=600 size="600px" %}
 </div>
 
-<div class="media-row breakout">
+<div class="media-row breakout" style="--shift: 8vw;">
   {% include loop_video.html id="Video_Aug_30_2026_11_16_13" width=600 size="600px" %}
   {% include loop_video.html id="Video_Aug_30_2026_21_14_04" width=600 size="600px" %}
 </div>
@@ -356,17 +354,17 @@ I put together a [quick SDK](https://github.com/JamesRXiao/The-Grid-Software){:t
 
 ## Deploy
 
-<div class="media-row breakout">
+<div class="media-row breakout" style="--shift: 8vw;">
   {% include loop_video.html id="Video_Aug_31_2026_00_57_41" width=600 size="400px" %}
   <img src="https://res.cloudinary.com/uzoen9fy/image/upload/v1794553037/Photo_Aug_31_2026_15_43_43.jpg" style="flex: 0 1 300px;">
   {% include loop_video.html id="Video_Aug_30_2026_21_56_31" width=600 size="400px" %}
 </div>
-<div class="media-row breakout">
+<div class="media-row breakout" style="--shift: 8vw;">
   {% include loop_video.html id="Video_Aug_30_2026_23_00_56" width=600 size="400px" %}
   {% include loop_video.html id="Video_Aug_31_2026_00_43_42" width=600 size="400px" %}
   {% include loop_video.html id="Video_Aug_30_2026_22_59_49" width=600 size="400px" %}
 </div>
-<div class="media-row breakout">
+<div class="media-row breakout" style="--shift: 8vw;">
   {% include loop_video.html id="Video_Aug_30_2026_21_58_01" width=600 size="400px" %}
   {% include loop_video.html id="Video_Aug_30_2026_22_08_25" width=600 size="400px" %}
   <img src="https://res.cloudinary.com/uzoen9fy/image/upload/v1794553033/Photo_Aug_30_2026_23_15_31.jpg" style="flex: 0 1 300px;">

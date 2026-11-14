@@ -1,6 +1,26 @@
 <div class="entries-grid">
   {% assign projects = site.projects | sort: "date" | reverse %}
   {% for post in projects %}
-    {% include archive-single.html type="grid" %}
+    <div class="grid__item">
+      <article class="archive__item">
+        {% if post.header.teaser %}
+          <div class="archive__item-teaser">
+            <a href="{{ post.url | relative_url }}">
+              <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title }}"
+                   style="object-position: {{ post.teaser_position | default: 'center' }};">
+            </a>
+          </div>
+        {% endif %}
+        <h2 class="archive__item-title no_toc">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        {% if post.excerpt %}
+          <p class="archive__item-excerpt">
+            {{ post.excerpt | markdownify | strip_html | truncate: 160 }}
+            <br><span class="project-year">{{ post.date | date: "%Y" }}</span>
+          </p>
+        {% endif %}
+      </article>
+    </div>
   {% endfor %}
 </div>
