@@ -4,7 +4,7 @@ excerpt: "Designing, building, and launching a thrust vector control model rocke
 date: 2024-09-01
 layout: single
 header:
-  teaser: /assets/images/projects/tvc_rocket/tvc_rocket.JPG
+  teaser: /assets/images/projects/tvc_rocket/tvc_rocket.jpg
 teaser_position: "50% 80%"
 toc: true            # optional: table of contents on the right
 
