@@ -1,6 +1,6 @@
 ---
 title: "Eagle Project"
-excerpt: "Leading construction of a boardwalk for my Scouts BSA Eagle project"
+excerpt: "Leading construction of a boardwalk for my Scouts BSA Eagle project."
 date: 2024-03-01
 layout: single
 header:
