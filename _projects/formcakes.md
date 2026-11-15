@@ -20,6 +20,7 @@ gallery_1:
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794635759/IMG_2911.heic
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794635759/IMG_2911.heic
     alt: "miters"
+    title: "Electronics backside"
 
 gallery_2:
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794635755/IMG_2879.heic

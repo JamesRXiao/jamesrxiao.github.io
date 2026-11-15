@@ -23,7 +23,7 @@ gallery_header:
 
 gallery_mass_assembly:
   - video: room_test
-    title: "Vaughn and I testing rainbow pattern for the first time"
+    title: "Vaughn and I testing rainbow pattern for the first time in our room"
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794627540/Photo_Jan_25_2026_00_44_06.jpg
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794627540/Photo_Jan_25_2026_00_44_06.jpg
     alt: "windowsill"
@@ -115,7 +115,7 @@ gallery_gallery:
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794627497/earth_day_display.jpg
     alt: "earth day"
     title: "Earth day!"
-  - video: IMG_4727
+  - video: IMG_3296
     title: "Sometimes it's hard to get a feel for just how massive this display is. This video usually helps me."
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794627547/production_line.jpg
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794627547/production_line.jpg

@@ -1,6 +1,6 @@
 ---
 title: "Robotic End Effector (Critical Matter Group)"
-excerpt: "Building a robotic end effector with the CM Group at MIT Media Lab"
+excerpt: "Building a robotic end effector with the CM Group at MIT Media Lab."
 date: 2026-06-01
 layout: single
 header:
@@ -62,10 +62,6 @@ gallery_5:
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794643300/IMG_3281.heic
     alt: "weigh"
     title: "Weighing the end effector"
-  - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794643300/IMG_3281.heic
-    url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794643300/IMG_3281.heic
-    alt: "weigh"
-    title: "Weighing the end effector"
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794643304/IMG_4340.heic
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794643304/IMG_4340.heic
     alt: "final"
@@ -81,9 +77,11 @@ gallery_5:
 ---
 
 This was a project that I undertook while working at the [Critical Matter Group](https://www.media.mit.edu/groups/critical-matter/overview/){:target="_blank" rel="noopener noreferrer"} in the MIT Media Lab throughout my freshman year. In short, it's an end effector mounted on a UR20 robotic arm that is capable of automatically melt-spinning polymer fibers around objects. In short, the objectives were to:
+
 - Repeatedly stretch PCL into fibers through a dual heatbed/nail setup
 - Modulate the width of the stretched PCL
 - Wrap the stretched fibers around an object
+
 It does this by closing and opening two crocodile "jaws" to create the fibrous strands, then rotating the entire jaw system around an object to wrap it. Hence, it got the nickname "Croc End Effector"
 
 {% include gallery id="gallery_1" class="breakout gallery-equal" height="400px" shift="4vw" total_width="1300px"%}
@@ -93,12 +91,15 @@ This end effector underwent 5 iterations during the time I worked on it. In the 
 The project can be broken up into 2 main pieces of hardware: a rotor (PCL system) and stator (houses motor that spins rotor)
 
 The components of the rotor include:
+
 - **Heatbeds**: The polymer we used for testing is PCL (polycaprolactone), which has a low melting point of around ~60C. We used ceramic heaters (the same kind in 3D printer nozzles!) mounted to an aluminum bed to hold the PCL, serving as the "jaws". Each "jaw" served a different purpose:
 	- PCL Bed: This contained a heated, softened layer of PCL
 	- Nail Bed: This heated up a set of aluminum nails so that each would melt and pull away a fiber as the jaw opened
 - **Jaw Actuator**: Reliably open and close the jaws
 - **Electrical System**: Power regulation, communication to UR20 and remote station
+
 The components of the stator include:
+
 - **Rotation Motor**: Be robust enough to spin a complex, heavy system
 - **Electrical System**: Provide power and communication to an actively rotating device
 
@@ -138,7 +139,7 @@ As the components we used requested 5V, 6V, 9V, 12V, and 24V, I used buck conver
 {% include gallery id="gallery_4" class="breakout gallery-equal" height="400px" shift="4vw" total_width="1300px"%}
 
 ## Later Iterations
-As I progressed with the design of this end effector, a lot more progress was made in terms of reliability :). Yuxiang and Eleni also joined the Croc team, where they worked on the heatbeds and stator design.
+As I progressed with the design of this end effector, a lot more progress was made in terms of reliability. Yuxiang and Eleni also joined the Croc team, where they worked on the heatbeds and stator design.
 
 #### Jaw Actuator
 Because of their robustness, speed, and power, I switched to dual NEMA17 stepper motors driving 300mm SFU1204 ball screws, each controlling one jaw. To fix the rigidity issue from the previous lead screw design, I mounted each jaw on MGN9 linear rails that spanned the entire actuation range. This design proved to be incredibly robust, powerful, and precise enough for all jaw movements. 

@@ -1,6 +1,6 @@
 ---
 title: "Platypus (HackMIT 2025)"
-excerpt: "Silent alarm clock for HackMIT 2025"
+excerpt: "Silent alarm clock for HackMIT 2025."
 date: 2025-09-14
 layout: single
 header:
