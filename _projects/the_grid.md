@@ -131,7 +131,7 @@ Every year, MIT hosts Residence EXploration (REX), a multi-day, campus-wide even
 
 This project was spearheaded by the 3 of us, all of us being MIT '29s and living on the [same hall](https://tetazoo.mit.edu/){:target="_blank" rel="noopener noreferrer"} (Tetazoo!). Over the course of 10 months (4 working months) as freshman, we funded, designed, tested, led mass production, and deployed our build.
 
-I was responsible for designing the system-level power and communications architecture, all PCB design and testing, all electronics component sourcing, designing the software SDK and firmware architecture, as well as firmware testing.
+I was responsible for designing the system-level power and communications architecture, all PCB design and testing, all electronics component sourcing, designing the software SDK and firmware architecture, as well as firmware testing. I used KiCAD for PCB design, wrote firmware in embedded C, designed 3D-printed models in SolidWorks, and used soldering/bench equipment for prototyping and testing electronics.
 
 ![](/assets/images/projects/the_grid/the_grid.jpg){: .align-center style="width: 600px; height: 500px; object-fit: cover; object-position: 100% 20%"}
 
@@ -278,7 +278,7 @@ PCB Rev 2 was our final production run, of which we ordered 50 boards from JLCPC
 - Silkscreen changes :)
 
 ## Firmware Overview
-I took many of the lessons from working on the firmware for Tetris into this project. However, one of the biggest differences was that in *The Grid*, the controller board requires messages back from each module, making timing crucial. 
+I took many of the lessons from working on the firmware for [Tetris](https://www.jamesxiao.dev/projects/tetris/) into this project. However, one of the biggest differences was that in *The Grid*, the controller board requires messages back from each module (two-way communication), making timing crucial. 
 
 I created the firmware architecture for our system based on a strict timing protocol for each frame. All modules would operate under the same firmware, differentiated only by module ID. Because all PCBs shared a RS-485 bus, it was important to not squash transmissions.
 
@@ -305,7 +305,9 @@ I created this frame timing protocol:
 - The original plan was for each module to transmit their microswitch data every frame, regardless of whether they have been stepped on. On the last day of assembly, I realized that this just created unnecessary bus transmissions, and set modules to transmit only when stepped on
 
 ## Prototyping
-Squashing all the bugs in this took wayyy too long. I pulled an all-nighter in our 4-409 makerspace testing and debugging firmware.
+Once again, I took many lessons from [Tetris](https://www.jamesxiao.dev/projects/tetris/) into the testing for this project. Because we had a prototyping batch of PCBs, we made sure to test **all the systems as thoroughly as possible** to ensure that no issue can bite us in the middle of mass assembly.
+
+Over the summer, squashing all the bugs in this took wayyy too long. I pulled an all-nighter in our 4-409 makerspace testing and debugging firmware.
 <figure style="max-width: 1000px; margin: 2em auto;">
   <img src="https://res.cloudinary.com/uzoen9fy/image/upload/Screenshot_2026-11-13_033722.png" alt="oh my god">
   <figcaption>i lost it a little</figcaption>

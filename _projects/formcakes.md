@@ -51,7 +51,7 @@ gallery_3:
 
 I did this project with 2 of my friends, Vaughn Khouri and John Xu, for the Formlabs IAP Hackathon in January 2025. Our goal was to design and build an injection molding machine - but for pancakes. Completed in under 48 hours, our machine injected pancake batter in a Benchy mold, heated the mold, and automatically ejected the pancake Benchy onto a plate. 
 
-I was responsible for the electronics and firmware development for this project. 
+I was responsible for the electronics and firmware development for this project.
 
 The aluminum mold was heated with several PTC heating elements, and both halves were actuated by stepper-controlled ball screws. A third stepper motor controlled batter injection.
 
