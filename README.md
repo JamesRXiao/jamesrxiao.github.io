@@ -1,3 +1,3 @@
 # jamesrxiao.github.io
 
-personal website
+[jamesxiao.dev](https://www.jamesxiao.dev/)
