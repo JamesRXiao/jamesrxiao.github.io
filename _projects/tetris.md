@@ -151,7 +151,7 @@ Hacking has always been ingrained into MIT's culture, and it has long been regar
 
 This hack had actually been pulled over a decade ago in 2012, when a group of hackers successfully put Tetris on the Green Building using a fleet of LED modules as well. Unfortunately, due to factors such as condensation and unenclosed hardware, much of their hardware failed by 2018 when the installation stopped functioning. Our goal was to revive the hack while designing everything from scratch, building upon the lessons learned in the previous installation to last 10+ years. 
 
-Working with an incredible team that did PCB development/EE, hardware design, software, and sourcing, I was responsible for the **firmware development**, writing and testing the code for every module and the base station.
+Working with an incredible team that did PCB development/EE, hardware design, software, and sourcing, I was responsible for the **firmware development**, writing and testing the code for every module and the base station. I wrote the firmware in embedded C for an STM32WL3 series microcontroller.
 
 In April of 2026, for MIT's Campus Preview Weekend, we hosted the grand reveal of our hack. [Anhad](https://www.anhadsawhney.com/){:target="_blank" rel="noopener noreferrer"}, who led the project, put together a reveal compilation:
 
@@ -199,7 +199,9 @@ I was the sole member responsible for firmware development on our STM32WL3 serie
 - NFC capability, allowing us to write module IDs (and other data) after the boards have been flashed and sealed up
 - 30FPS operation
 
-By far the most challenging aspects of my experience were interfacing with the 915MHz FSK radio between the base station and modules, and handling the encryption protocol.
+As these modules would be sealed in the building intending to last 10+ years, by far the most challenging part of my experience was ensuring that the firmware was **bulletproof**. No matter what happened, my code needed to be able to handle it.
+
+Additional challenges were reliably interfacing with the 915MHz FSK radio between the base station and modules, and handling the encryption protocol.
 
 Throughout those 4 months, I:
 - Designed and programmed a state machine on both base station + modules that:
@@ -226,11 +228,13 @@ The state machine went hand-in-hand with the encryption protocol, and was quite 
 
 ## Testing and Mass Assembly
 
-Testing took up the majority of the time I spent, and this project certainly showed me just how important testing was and how much time it took. There was a period of 2 weeks in March where nearly all I did was go to our makerspace, run tests, iterate, debug, and go to bed at sunrise. We ran rigorous tests on the state machine, module commands, accelerated lifetime testing (heat dissipation and thermal throttling), and much more.
+Testing took up the vast majority of all time I spent on this project, as it was the only way I could ensure my firmware was bulletproof. This project certainly showed me just how important testing was and how much time it took. There was a period of 2 weeks in March where nearly all I did was go to our makerspace, run tests, iterate, debug, and go to bed at sunrise. We ran rigorous tests on the state machine, module commands, accelerated lifetime testing (heat dissipation and thermal throttling), and much more.
+
+While we were as thorough as possible in our testing along the way, I learned that there will always be things that people overlook, especially for a complex project that involves all fields of engineering. We eventually ended up with a large radio-related problem that plagued us even after the modules were deployed, and following its scent, it could be traced back to failing to perform a singular test earlier in the project. 
+
+I also learned that even if the firmware was perfect in theoretically doing its job, it's not enough - firmware runs on real hardware which can have issues, and when deadlines are tight, it's firmware's job to fix them too. 
 
 Once we had our modules assembled, we took them to our makerspace and ran tests with all of them operational at once, identifying modules with issues (problem children) and trying to find the root causes. This room was absolutely insane. The modules drew almost 10kW in total, and you couldn't look at the tables for more than a few seconds without needing to squint or put on sunglasses. The entire room also became a lot warmer from the modules' heat. 
-
-While testing, I learned that even if the firmware was perfect in doing its job theoretically, it's not enough - firmware runs on real hardware which can have issues, and when deadlines are tight, it's firmware's job to fix them too :)
 
 One great thing about needing to mass produce our modules is that rare bugs that would have been harder to identify showed up a lot more frequently. When we have 160 identical modules running the same code at the same time, we can quickly identify and troubleshoot modules that are acting up, diagnosing the issue and seeing if it can be fixed in hardware or firmware. We spent a good while running tests in the room of the wrath of the sun.
 

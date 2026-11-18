@@ -86,7 +86,7 @@ It does this by closing and opening two crocodile "jaws" to create the fibrous s
 
 {% include gallery id="gallery_1" class="breakout gallery-equal" height="400px" shift="4vw" total_width="1300px"%}
 
-This end effector underwent 5 iterations during the time I worked on it. In the earlier iterations, I was responsible for the entire system, from component selection, to CAD, to electronics design, to assembly. As more team members joined the project, I was able to focus more on the main frame design, system-level electronics, and assembly
+This end effector underwent 5 iterations during the time I worked on it. In the earlier iterations, I was responsible for the entire system, from component selection, to CAD, to electronics design, to assembly. I used Onshape to design the 3D-printed components that made up the robotic device. As more team members joined the project, I was able to focus more on the main frame design, system-level electronics, and assembly.
 
 The project can be broken up into 2 main pieces of hardware: a rotor (PCL system) and stator (houses motor that spins rotor)
 

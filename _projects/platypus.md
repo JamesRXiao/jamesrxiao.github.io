@@ -15,9 +15,6 @@ gallery:
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794633709/IMG_1017.heic
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794633709/IMG_1017.heic
     alt: "working"
-  - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794633709/IMG_1017.heic
-    url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794633709/IMG_1017.heic
-    alt: "working"
   - video: IMG_1028
     title: "Prototype demo"
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794634247/copy_of_img_1035.heic
@@ -30,7 +27,7 @@ gallery:
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794633710/IMG_1022.heic
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794633710/IMG_1022.heic
     alt: "sleep"
-    title: "sleeping in dlab"
+    title: "testing in dlab"
   - image_path: https://res.cloudinary.com/uzoen9fy/image/upload/v1794633717/IMG_1037.heic
     url: https://res.cloudinary.com/uzoen9fy/image/upload/v1794633717/IMG_1037.heic
     alt: "product"
